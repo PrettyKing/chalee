@@ -1,0 +1,23 @@
+{
+  "name": "@chalee/touch-emulator",
+  "version": "1.0.0",
+  "description": "Chalee touch emulator",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "build": "node ./build.js",
+    "prepare": "pnpm build"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PrettyKing/chalee.git",
+    "directory": "packages/chalee-touch-emulator"
+  },
+  "bugs": "https://github.com/PrettyKing/chalee/issues",
+  "author": "chalee",
+  "license": "MIT"
+}

@@ -13,6 +13,8 @@
   },
   "packageManager": "pnpm@8.8.0",
   "devDependencies": {
+    "@chalee/cli": "workspace:*",
+    "@chalee/eslint-config": "workspace:*",
     "eslint": "^8.46.0",
     "husky": "^8.0.1",
     "nano-staged": "^0.8.0",
