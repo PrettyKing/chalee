@@ -1,0 +1,44 @@
+{
+  "name": "create-chalee-cli-app",
+  "version": "1.0.0",
+  "description": "Create Chalee CLI App",
+  "main": "lib/index.js",
+  "bin": {
+    "create-chalee-cli-app": "./lib/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "lib",
+    "generators"
+  ],
+  "keywords": [
+    "chalee",
+    "cli",
+    "create-chalee-cli-app"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PrettyKing/chalee.git",
+    "directory": "packages/create-chalee-cli-app"
+  },
+  "bugs": "https://github.com/PrettyKing/chalee/issues",
+  "author": "chalee",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "enquirer": "2.3.6",
+    "fast-glob": "^3.2.11",
+    "fs-extra": "^11.1.0",
+    "picocolors": "^1.0.0",
+    "rslog": "^1.1.0"
+  }
+}
