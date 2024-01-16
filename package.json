@@ -1,7 +1,15 @@
 {
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky install",
+    "dev": "pnpm --dir ./packages/chalee dev",
+    "lint": "eslint \"./packages/**/{src,test}/**/*.{vue,ts,tsx,js,mjs,cjs}\"",
+    "test": "pnpm --dir ./packages/chalee test",
+    "test:watch": "pnpm --dir ./packages/chalee test:watch",
+    "test:update": "pnpm --dir ./packages/chalee test:update",
+    "test:coverage": "pnpm --dir ./packages/chalee test:coverage",
+    "build": "pnpm --dir ./packages/chalee build",
+    "build:site": "pnpm --dir ./packages/chalee build:site"
   },
   "nano-staged": {
     "*.md": "prettier --write",
