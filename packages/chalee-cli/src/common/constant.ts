@@ -3,7 +3,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { join, dirname, isAbsolute } from 'node:path';
 
 function findRootDir(dir: string): string {
-  if (existsSync(join(dir, 'vant.config.mjs'))) {
+  if (existsSync(join(dir, 'chalee.config.mjs'))) {
     return dir;
   }
 
@@ -22,7 +22,7 @@ export const ES_DIR = join(ROOT, 'es');
 export const LIB_DIR = join(ROOT, 'lib');
 export const DOCS_DIR = join(ROOT, 'docs');
 export const SITE_DIST_DIR = join(ROOT, 'site-dist');
-export const VANT_CONFIG_FILE = join(ROOT, 'vant.config.mjs');
+export const VANT_CONFIG_FILE = join(ROOT, 'chalee.config.mjs');
 export const PACKAGE_JSON_FILE = join(ROOT, 'package.json');
 
 // Relative paths

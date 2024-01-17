@@ -7,6 +7,6 @@ const { version: cliVersion } = require('../package.json');
 
 export { cliVersion };
 
-logger.greet(`  Vant CLI v${cliVersion} / Rsbuild v${rsbuildVersion}\n`);
+logger.greet(`  Chalee CLI v${cliVersion} / Rsbuild v${rsbuildVersion}\n`);
 
 process.env.VANT_CLI_VERSION = cliVersion;

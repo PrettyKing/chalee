@@ -1,8 +1,8 @@
 {
-  "name": "<%= name %>",
+  "name": "chalee",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/<%= name %>.js",
+  "main": "lib/chalee.js",
   "module": "es/index.js",
   "style": "lib/index.css",
   "typings": "lib/index.d.ts",
@@ -31,7 +31,6 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@chalee/cli": "^6.0.0",
     "vue": "^3.3.4",
     "sass": "^1.49.7"
   },
