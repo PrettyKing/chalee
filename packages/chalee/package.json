@@ -31,8 +31,8 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "vue": "^3.3.4",
-    "sass": "^1.49.7"
+    "sass": "^1.49.7",
+    "vue": "^3.3.4"
   },
   "eslintConfig": {
     "root": true,
@@ -46,5 +46,8 @@
   "browserslist": [
     "Chrome >= 51",
     "iOS >= 10"
-  ]
+  ],
+  "dependencies": {
+    "chalee": "file:"
+  }
 }
