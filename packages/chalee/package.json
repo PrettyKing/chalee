@@ -21,7 +21,16 @@
     "test:watch": "chalee-cli test --watch",
     "test:coverage": "open test/coverage/index.html"
   },
-  "author": "",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PrettyKing/chalee.git",
+    "directory": "packages/chalee"
+  },
+  "bugs": "https://github.com/PrettyKing/chalee/issues",
+  "author": "chalee",
   "nano-staged": {
     "*.md": "prettier --write",
     "*.{ts,tsx,js,vue,less,scss}": "prettier --write",
