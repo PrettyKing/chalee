@@ -31,6 +31,10 @@ importers:
         version: 3.2.2
 
   packages/chalee:
+    dependencies:
+      chalee:
+        specifier: 'file:'
+        version: file:packages/chalee(vue@3.4.14)
     devDependencies:
       sass:
         specifier: ^1.49.7
@@ -3532,4 +3536,14 @@ packages:
 
   /zod@3.22.4:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==, tarball: https://registry.npmmirror.com/zod/-/zod-3.22.4.tgz}
+    dev: false
+
+  file:packages/chalee(vue@3.4.14):
+    resolution: {directory: packages/chalee, type: directory}
+    id: file:packages/chalee
+    name: chalee
+    peerDependencies:
+      vue: ^3.3.4
+    dependencies:
+      vue: 3.4.14(typescript@5.3.3)
     dev: false
