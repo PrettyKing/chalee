@@ -1,15 +1,18 @@
 <template>
-  <div class="demo-button">
+  <button class="demo-button" :style="`background-color:${color}`">
     <slot />
-  </div>
+  </button>
 </template>
 
 <script>
 export default {
-  name: 'ChTag',
+  name: 'Button',
 
   props: {
-    color: String,
+    color: {
+      type: String,
+      default: '#e4392c',
+    },
     type: {
       type: String,
       default: 'primary',
@@ -24,7 +27,6 @@ export default {
   color: #fff;
   font-size: 16px;
   line-height: 36px;
-  background-color: #f44;
   border: none;
   border-radius: 30px;
 }

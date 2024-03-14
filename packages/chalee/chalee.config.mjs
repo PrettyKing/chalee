@@ -7,6 +7,9 @@ export default {
     site: {
       publicPath: '/chalee/',
     },
+    vetur: {
+      tagPrefix: 'ch',
+    },
   },
   site: {
     title: 'chalee',
@@ -29,12 +32,12 @@ export default {
         title: '基础组件',
         items: [
           {
-            path: 'demo-button',
-            title: 'DemoButton 按钮',
+            path: 'button',
+            title: 'Button 按钮',
           },
           {
-            path: 'ch-tag',
-            title: 'ChTag 标签',
+            path: 'tag',
+            title: 'Tag 标签',
           },
         ],
       },

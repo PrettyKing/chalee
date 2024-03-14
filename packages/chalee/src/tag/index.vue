@@ -1,13 +1,12 @@
 <template>
-  <button class="demo-button">
+  <div class="demo-tag" :style="`background-color:${color}`">
     <slot />
-  </button>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'DemoButton',
-
+  name: 'ChTag',
   props: {
     color: String,
     type: {
@@ -19,13 +18,12 @@ export default {
 </script>
 
 <style lang="less">
-.demo-button {
-  min-width: 120px;
+.demo-tag {
   color: #fff;
   font-size: 16px;
   line-height: 36px;
-  background-color: #f44;
-  border: none;
-  border-radius: 30px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
 }
 </style>
