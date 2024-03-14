@@ -32,6 +32,10 @@ export default {
             path: 'demo-button',
             title: 'DemoButton 按钮',
           },
+          {
+            path: 'ch-tag',
+            title: 'ChTag 标签',
+          },
         ],
       },
     ],
