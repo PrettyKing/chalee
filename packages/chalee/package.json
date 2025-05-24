@@ -1,6 +1,6 @@
 {
   "name": "chalee",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🚀 A Modern Vue 3 Mobile Component Library - 轻量、可靠的移动端 Vue 3 组件库",
   "main": "lib/chalee.js",
   "module": "es/index.js",
@@ -81,5 +81,8 @@
   "engines": {
     "node": ">=16.0.0",
     "pnpm": ">=8.0.0"
+  },
+  "dependencies": {
+    "chalee": "file:"
   }
 }
