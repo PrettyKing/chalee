@@ -1,14 +1,29 @@
 {
   "name": "chalee",
   "version": "1.0.0",
-  "description": "",
+  "description": "🚀 A Modern Vue 3 Mobile Component Library - 轻量、可靠的移动端 Vue 3 组件库",
   "main": "lib/chalee.js",
   "module": "es/index.js",
   "style": "lib/index.css",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
-    "es"
+    "es",
+    "README.md"
+  ],
+  "keywords": [
+    "vue",
+    "vue3",
+    "component",
+    "components",
+    "ui",
+    "mobile",
+    "chalee",
+    "typescript",
+    "frontend",
+    "mobile-ui",
+    "vue-component",
+    "component-library"
   ],
   "scripts": {
     "dev": "chalee-cli dev",
@@ -19,18 +34,25 @@
     "release": "chalee-cli release --tag next",
     "release:site": "pnpm build:site && npx gh-pages -d site-dist",
     "test:watch": "chalee-cli test --watch",
-    "test:coverage": "open test/coverage/index.html"
+    "test:coverage": "open test/coverage/index.html",
+    "prepublishOnly": "pnpm build"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/PrettyKing/chalee.git",
     "directory": "packages/chalee"
   },
+  "homepage": "https://github.com/PrettyKing/chalee#readme",
   "bugs": "https://github.com/PrettyKing/chalee/issues",
-  "author": "chalee",
+  "author": {
+    "name": "PrettyKing",
+    "url": "https://github.com/PrettyKing"
+  },
+  "license": "MIT",
   "nano-staged": {
     "*.md": "prettier --write",
     "*.{ts,tsx,js,vue,less,scss}": "prettier --write",
@@ -56,7 +78,8 @@
     "Chrome >= 51",
     "iOS >= 10"
   ],
-  "dependencies": {
-    "chalee": "file:"
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": ">=8.0.0"
   }
 }
